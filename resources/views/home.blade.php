@@ -1,8 +1,21 @@
-@extends('layouts.app')
-
-@section('title', 'Главная - Rust Wiki')
-
-@section('content')
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+    <header>
+        <a href="index.html" target="_blank"><img  src="images/logo.webp" alt="rustlogo" class="logo"></a>
+        <input type="search" class="headersearch" placeholder="Поиск..." >   
+        <nav class="link">
+            <a href="{{ route('about') }}">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.blade.php">Строительства</a>
+            <a href="{{ route('news') }}">обновление</a>
+        </nav>
+    </header>
     <div class="buy">           
         <h2>Исследуйте</h2>
         <h2>Стройте</h2>
@@ -12,24 +25,53 @@
     </div>
     <div class="Rust">
         <div class="RustBack">
-            <p>Rust — это многопользовательская компьютерная игра, в которой игроки сражаются друг с другом в суровом открытом мире...</p>
+            <p>
+                Rust — это многопользовательская компьютерная игра, в которой игроки сражаются друг с другом в суровом открытом мире. В игре присутствуют такие опасности, как радиоактивное излучение и дикие животные, однако главная угроза исходит от других игроков.
+                Большинство игровых карт сгенерировано процедурно, за исключением некоторых встроенных карт. Каждая карта расположена на одном или нескольких островах с различными биомами и погодными условиями. На картах встречаются горы, холмы, пещеры, равнины, леса и т.д. Кроме того, на картах встречаются «монументы» — группы зданий или сооружений, часто населённые враждебными неигровыми персонажами и имеющие ящики с определёнными видами ресурсов. Контроль над высокоуровневыми монументами — это один из важных факторов, определяющих PvP в игре.
+            </p>
         </div>
     </div>
     <div class="pcgame">
-        <h2>“Rust - одна из самых жестоких игр в Steam, и именно это делает ее такой привлекательной”.</h2>
+        <h2>
+            “Rust - одна из самых жестоких игр в Steam, и именно это делает ее такой привлекательной”.
+        </h2>
         <div class="line"></div>
-        <p>PC GAMER</p>
+        <p>
+            PC GAMER
+        </p>
     </div>
     <div class="twitch">
         <h1>Twitch Drops</h1>
-        <p>Twitch Drops подарки от ваших любимых стримеров. Будьте бдительны в отношении мошенников.</p>
+        <p>Twitch  Drops подарки от ваших любимых стримеров. Будьте бдительны в отношении мошенников. Facepunch никогда не свяжется с вами.</p>
         <a href="https://twitch.facepunch.com/"><button class="twitch-button">ЗАБРАТЬ</button></a>
     </div>
     <div class="email">
         <p>связь с нами</p>
         <form class="email-form" id="emailForm">
-            <input type="email" class="email-input" placeholder="Введите ваш Email" required>
-            <button type="submit" class="submit-btn"><span>→</span></button>
-        </form>
+        <input 
+            type="email" 
+            class="email-input" 
+            placeholder="Введите ваш Email" 
+            required
+        >
+        <button type="submit" class="submit-btn">
+            <span>→</span>
+        </button>
+    </form>
     </div>
-@endsection
+    <div class="dump"></div>
+    <footer>
+        <nav class="footerl">
+            <a href="about.html">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.html">Строительства</a>
+            <a href="news.html">обновление</a>
+            <a href="log.html">авторизация</a>  
+        </nav>
+        <div class="copyright">
+            <p>© COPYRIGHT 2026. Все права защищены</p>
+        </div>
+        
+</footer>
+</body>
+</html>

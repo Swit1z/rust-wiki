@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('home'); // или 'home', в зависимости от имени файла
 })->name('home');
 
 Route::get('/about', function () {
@@ -18,14 +18,14 @@ Route::get('/building', function () {
     return view('building');
 })->name('building');
 
-Route::get('/biom', function () {
-    return view('biom');
-})->name('biom');
-
 Route::get('/news', function () {
     return view('news');
 })->name('news');
 
-Route::get('/npc', function () {
-    return view('npc');
-})->name('npc');
+Route::get('/login', function () {
+    return view('log');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('reg');
+})->name('register');

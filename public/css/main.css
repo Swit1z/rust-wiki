@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+
+body {
+    font-family: 'Regular';
+    color: white;
+    background-color: #000000
+}
+
+.buy{
+    background-image: url(../images/1image.jpg);  
+    height: 1440px;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    background-position: center;       
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 300px; 
+}
+.buy h2{ 
+    min-height: 100px;
+    padding-left: 50px;
+    max-width: 800px;
+    text-align: left;   
+    font-size: 72px;
+}
+.buy p{
+    padding: 40px;
+    max-width: 500px;
+}
+.buy-button {
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Rust{
+    background-image: url(../images/Rust_Dev.jpg);  
+    height: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    background-position: center;       
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rust p{
+    max-width: 80%;
+    font-size: 32px;
+    text-align: center;
+    padding: 100px;
+    margin: 40px;
+}
+.RustBack{
+    background-color: #000000;
+    opacity: 80%;
+    width: 70%;
+    height: auto;  
+    border-radius: 15px; 
+}
+.pcgame{
+    background-color: #252525;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.pcgame h2{
+    max-width: 80%;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+.pcgame p{
+    max-width: 80%;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+.line {
+    height: 2px; 
+    background-color: #ff0000;
+    margin: 20px auto;
+    width: 30%;
+}
+.twitch{
+    background-image: url(../images/Beach.png);
+    height: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    background-position: center;       
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.twitch h1{
+    min-height: 100px;
+    padding-left: 50px;
+    max-width: 800px;
+    text-align: left;   
+    font-size: 72px;
+    padding: 20px;
+}
+.twitch p{
+    max-width: 40%;
+    font-size: 24px;
+    text-align: center;
+    padding: 40px;
+}
+.twitch-button{
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.email{
+    background-color: #000000;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+.email p{
+    max-width: 40%;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+.email-input {
+    width: 500px;
+    padding: 20px;
+    border: none;
+    background-color: #666;
+    color: #ffffff; 
+}
+.submit-btn {
+    padding: 20px ;
+    background-color: #b91c1c;
+    border: none;
+    color: #fff;
+    min-width: 60px;
+}
+.dump{
+    background-image: url(../images/dump.webp);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+       
+    .buy{
+        text-align: left;
+        flex-direction: column; 
+        align-items: center;
+        padding-left: 0; 
+        justify-content: center;
+        max-height: 460px;
+        text-align: center;
+
+    }
+    
+    .buy h2 {
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        min-height: 50px;
+        max-height: 100px;
+        padding-left: 0px;
+        max-width: 200px;
+    }
+    .Rust{
+        max-height: 500px;
+    }
+
+    .RustBack {
+        width: 100%;
+    }
+    
+    .Rust p, .twitch p {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .pcgame{
+        height: 400px;
+    }
+    .pcgame h2{
+        font-size: 20px;
+    }
+
+    .buy-button, .twitch-button {
+        width: 90%;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .email-form{
+        width: 50%;
+        display: flex;
+        align-items: row;
+    }
+
+    .email-input {
+        width: 90%;
+    }
+}
+

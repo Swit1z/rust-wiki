@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+body {
+    font-family: 'Regular';
+    height: 100%;
+    width: flex;
+    color: white;
+    background-color: #000000
+}
+
+header{
+    position: sticky;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.headersearch{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+
+}
+
+.auth {
+ 	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: column;
+	
+}
+
+.auth h2 {
+	color: white;
+	margin: 10px;
+	font-size:40px;
+}
+
+.forms {
+ 	display: flex;
+  	flex-direction: column; 
+  	gap: 10px;              
+  	width: 250px;           
+}
+
+.forms input {
+	padding: 8px 12px;
+  	font-size: 20px;
+  	border: 1px;
+  	border-radius: 4px;\
+  	border: none;
+  	outline: none;
+}
+.forms button {
+  	padding: 8px 12px;
+  	font-size: 16px;
+  	border: 1px;
+  	border-radius: 4px;
+}
+
+.forms button {
+  	background: #b91c1c;
+  	color: white;
+  	border: none;
+}
+
+.forms a {
+	color:#b91c1c ;
+	
+	margin: 10px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+    background-color: #000000;
+    min-height: 80px;          
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.copyright p {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.footerlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 12px;
+    align-items: column;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .headersearch {
+        width: 80%; 
+        box-sizing: border-box;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header nav a {
+        padding-left: 0; 
+        padding: 10px 0;
+        border-bottom: 1px;
+        font-size: 18px;
+    }
+
+}

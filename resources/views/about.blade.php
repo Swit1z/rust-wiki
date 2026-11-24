@@ -1,27 +1,62 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Rust Wiki</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body> 
+    <header>
+        <a href="index.html"><img src="images/logo.webp" alt="rustlogo" class="logo"></a>
+        <input type="search" class="headersearch" placeholder="Поиск...">    
+        <nav>
+            <a href="about.blade.php">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.html">Строительства</a>
+            <a href="news.html">обновление</a>
+        </nav>
+    </header>
 
-@section('title', 'О нас - Rust Wiki')
+    <main>
+        <div class="wiki">           
+            <h2>Добро пожаловать на Rust Wiki!</h2>      
+        </div>
 
-{{-- Подключаем специфичный стиль только для этой страницы --}}
-@section('styles')
-    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-@endsection
-
-@section('content')
-    <div class="wiki">           
-        <h2>Добро пожаловать на Rust Wiki!</h2>      
-    </div>
-    <div class="about">
-        <div class="RustBack">
-            <p>Rust — это игра на выживание, созданная студией Facepunch. Вдохновлён такими играми, как Minecraft...</p>
+        <div class="about">
             <h2>О компании</h2>
-            <div class="about-line"></div>
-        </div>
-        {{-- Исправлена опечатка оригинала: было <divc>, стало <div> --}}
-        <div class="text">
-            <h2>Facepunch Studios Ltd является британским независимым разработчиком...</h2>
             <div class="line"></div>
-            <p>Более подробную информацию можно узнать на официальном сайте <a href="https://facepunch.com/">facepunch</a></p>
+            <p>
+                Rust — это игра на выживание, созданная студией Facepunch. Вдохновлена такими играми, как Minecraft, и другими проектами о выживании в дикой природе. Rust стремится создать враждебную среду, в которой может развиваться уникальный геймплей.
+            </p>
+        <div class="text">
+            <h2>Facepunch Studios</h2>
+            <div class="line"></div>
+            <p>
+                Facepunch Studios Ltd является британским независимым разработчиком и издателем видеоигр, базирующимся в Бирмингеме, Англия. Компания была основана в июне 2004 года Гарри Ньюманом и за более чем двадцать лет существования стала одной из самых влиятельных инди-студий в индустрии.
+                Наибольшую известность студии принесла песочница Garry's Mod, выпущенная в 2006 году. Другим ключевым проектом является многопользовательский выживач Rust, полный релиз которого состоялся в 2018 году и который остается одной из самых популярных игр в Steam.
+            </p>
+            <div class="line"></div>
+            <p>
+                Более подробную информацию можно узнать на официальном сайте: 
+                <a href="https://facepunch.com/" target="_blank" style="color: #b91c1c; text-decoration: underline;">facepunch.com</a>
+            </p>
         </div>
-    </div>
-@endsection
+    </main>
+
+    <footer>
+        <nav class="footerlinks">
+            <a href="about.html">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.html">Строительства</a>
+            <a href="news.html">обновление</a>
+            <a href="log.html">авторизация</a>  
+        </nav>
+        <div class="copyright">
+            <p>© COPYRIGHT 2026. Все права защищены</p>
+        </div>
+        
+</footer>
+</body>
+</html>

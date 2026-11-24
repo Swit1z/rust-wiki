@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> 
+    <header>
+        <a href="index.html" target="_blank"><img  src="images/logo.webp" alt="rustlogo" class="logo"></a>
+        <input type="search" class="headersearch" placeholder="Поиск..." >   
+        <nav class="link">
+            <a href="about.html">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.html">Строительства</a>
+            <a href="news.html">обновление</a>
+        </nav>
+    </header>
+    <div class="news">           
+        <h2>обновления</h2>      
+    </div>
+    <div class="worcbanch">
+            <h2>Верстаки теперь улучшаемы!</h2>
+            <div class="banch">
+                <img src="images/banch.png" alt="новый миномёт">
+            </div>
+        <div class="text">
+            <p>
+               Верстаки переработаны и теперь поддерживают апгрейды. Доступно 10 улучшений, которые заметно меняют повседневный крафт:
+            </p>
+            <div class="line"></div>
+            <p>              
+                Изучение любого предмета из техдрева без прогресса (цена ×2, 10% шанс фейла)
+                Радиус крафта увеличен в 2 раза
+                10% шанс получить доп. предмет при массовом крафте (кроме ракет и С4)
+                Одежда всегда имеет минимум 1 слот под пластины
+                100% комфорта рядом с верстаком
+                Скорость крафта +25%
+                20% шанс получить 1–8 случайных компонентов при крафте
+                Прочность верстака +150%, урон от взрывов снижен
+                Стоимость изучения в техдреве –20%
+                Шанс вернуть 0–10% ресурсов при крафте
+            </p>
+            <div class="line"></div>
+            <h2>
+                Это делает верстаки не просто «ящиком крафта», а ключевой точкой прогрессии и экономики на базе и на серверах
+            </h2>
+        </div>
+    </div>
+    <div class="forest"></div>
+    <div class="secupdate">
+            <h2>Новое DLC — Industrial DLC</h2>
+            <div class="line"></div>
+            <p>
+                В Rust появится новое DLC — Industrial DLC. В нём добавят скины для:
+            </p>
+            <p>
+                Электропечи, Турелей, Полок
+            </p>
+            <p>
+                Скорее всего, будет ещё какой‑то контент, но точный список пока неизвестен. Цена DLC официально не объявлена.
+            </p>
+            <h2>Также разработчики добавят:</h2>
+            <div class="line"></div>
+            <div class="man">
+                <img src="images/manmin.png" alt="новый миномёт">
+            </div>
+            <p>
+                Миномёт (крафт пока неизвестен).
+            </p>
+            <p>
+                Боеприпасы к миномёту: крафтятся так же, как обычные ракеты для ракетницы.
+            </p>
+        </div>
+    <div class="hazm"></div>
+    <div class="lastupdate">
+        <div class="text">
+            <h2>Новый троллинг с ловушками в мае </h2>
+            <div class="line"></div>       
+            <p>
+                В мае выходит новый уровень троллинга: На ловушку из банок можно вешать гранаты Подойдёт любой тип гранат, включая сигнальную 
+                Представляю своё лицо, если задену такую ловушку на нефтянке… Ловушка остаётся тихой и незаметной, а взрыв уже будет в разы более неприятным.
+            </p>
+        </div>
+    </div>
+    <div class="sun"></div>
+    <footer>
+        <nav class="footerlinks">
+            <a href="about.html">О нас</a>
+            <a href="mech.html">Механика</a>
+            <a href="building.html">Строительства</a>
+            <a href="news.html">обновление</a>
+            <a href="log.html">авторизация</a>  
+        </nav>
+        <div class="copyright">
+            <p>© COPYRIGHT 2026. Все права защищены</p>
+        </div>
+        
+</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+body {
+    font-family: 'Regular';
+    width: flex;
+    color: white;
+    background-color: #000000
+    
+}
+
+.bild{
+  background-image: url(../images/building.png);
+    height: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    background-position: center;       
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bild h2{
+    
+    font-size: 64px;
+    text-align: center;
+    padding: 0;
+    margin-top: 500px;
+}
+
+.wardrobe {
+    background-color: #252525;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+}
+
+.wardrobe p {
+    max-width: 800px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 50px;
+}
+
+.wardrobe h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+    
+}
+
+.about-line {
+    height: 1px; 
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 85%;
+}
+
+.text{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    
+    color: #ffffff;
+    max-width: 450px;
+}
+.line{
+    height: 1px; 
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 85%;
+}
+.text p{
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+@media (max-width: 768px) {
+
+    .bild {
+        display: flex;
+        max-height: 400px;
+    }
+    .bild h2{
+        font-size: 32px;
+        margin-top: 0;
+
+    }
+}
