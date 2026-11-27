@@ -1,46 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Rust Wiki')</title>
-    <!-- Подключение основного стиля по умолчанию -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <!-- Позволяет подключать дополнительные стили на конкретных страницах -->
-    @yield('styles')
-</head>
-<body> 
-    <header>
-        <div class="container">
-            <a href="{{ route('home') }}"><img src="{{ asset('images/logo.webp') }}" alt="rustlogo" class="logo"></a>    
-            <nav>
-                <a href="{{ route('about') }}">О нас</a>
-                <a href="{{ route('mech') }}">Механика</a>
-                <a href="{{ route('building') }}">Строительства</a>
-                <a href="{{ route('biom') }}">Биомы</a>
-            </nav>
-        </div>
-    </header>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <main>
-        @yield('content')
-    </main>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <footer>
-        <div class="content">
-            <div class="social-icons">
-                <a href="https://vk.com/" target="_blank">
-                    <img src="{{ asset('images/free-icon-vk-5968835.png') }}" alt="VK" class="footer-links">
-                </a>
-                <a href="https://facepunch.com/" target="_blank">
-                    <img src="{{ asset('images/face.webp') }}" alt="Facepunch" class="footer-links">
-                </a>
-            </div>
-            <div class="copyright">
-                <!-- date('Y') автоматически подставит актуальный год (2026) -->
-                <p>© COPYRIGHT {{ date('Y') }}. Все права защищены</p>
-            </div>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body class="font-sans antialiased">
+        <div class="min-h-screen bg-gray-100">
+            @include('layouts.navigation')
+
+            <!-- Page Heading -->
+            @isset($header)
+                <header class="bg-white shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endisset
+
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
         </div>
-    </footer>
-</body>
+    </body>
 </html>

@@ -19,3 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
     })->create();
+    protected $middlewareAliases = [
+    // ... другие middleware
+    'admin' => \App\Http\Middleware\AdminMiddleware::class,
+    ];

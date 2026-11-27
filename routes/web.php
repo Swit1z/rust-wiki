@@ -1,31 +1,26 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ArticleController;
 
 Route::get('/', function () {
-    return view('home'); // или 'home', в зависимости от имени файла
-})->name('home');
+    return view('welcome');
+});
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/mech', function () {
-    return view('mech');
-})->name('mech');
+Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('articles', ArticleController::class);
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-Route::get('/building', function () {
-    return view('building');
-})->name('building');
 
-Route::get('/news', function () {
-    return view('news');
-})->name('news');
 
-Route::get('/login', function () {
-    return view('log');
-})->name('login');
-
-Route::get('/register', function () {
-    return view('reg');
-})->name('register');
+require __DIR__.'/auth.php';

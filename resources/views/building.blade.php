@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/building.css">
     <link rel="stylesheet" href="css/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body> 
-    <header>
-        <a href="index.html" target="_blank"><img  src="images/logo.webp" alt="rustlogo" class="logo"></a>
-        <input type="search" class="headersearch" placeholder="Поиск..." >   
-        <nav class="link">
-            <a href="about.html">О нас</a>
-            <a href="mech.html">Механика</a>
-            <a href="building.blade.php">Строительства</a>
-            <a href="news.html">обновление</a>
-        </nav>
-    </header>
+    @include('layouts.header')
     <div class="bild">           
         <h2>Строительство</h2>      
     </div>
@@ -48,18 +39,6 @@
             </p>
         </div>
     </div>
-   <footer>
-        <nav class="footerlinks">
-            <a href="about.html">О нас</a>
-            <a href="mech.html">Механика</a>
-            <a href="building.html">Строительства</a>
-            <a href="news.html">обновление</a>
-            <a href="log.html">авторизация</a>  
-        </nav>
-        <div class="copyright">
-            <p>© COPYRIGHT 2026. Все права защищены</p>
-        </div>
-        
-</footer>
+   @include('layouts.footer')
 </body>
 </html>

@@ -5,17 +5,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body> 
-    <header>
-        <a href="index.html" target="_blank"><img  src="images/logo.webp" alt="rustlogo" class="logo"></a>
-        <input type="search" class="headersearch" placeholder="Поиск..." >   
-        <nav class="link">
-            <a href="{{ route('about') }}">О нас</a>
-            <a href="mech.html">Механика</a>
-            <a href="building.blade.php">Строительства</a>
-            <a href="{{ route('news') }}">обновление</a>
-        </nav>
-    </header>
+<body>
+    @include('layouts.header') 
     <div class="buy">           
         <h2>Исследуйте</h2>
         <h2>Стройте</h2>
@@ -60,18 +51,6 @@
     </form>
     </div>
     <div class="dump"></div>
-    <footer>
-        <nav class="footerl">
-            <a href="about.html">О нас</a>
-            <a href="mech.html">Механика</a>
-            <a href="building.html">Строительства</a>
-            <a href="news.html">обновление</a>
-            <a href="log.html">авторизация</a>  
-        </nav>
-        <div class="copyright">
-            <p>© COPYRIGHT 2026. Все права защищены</p>
-        </div>
-        
-</footer>
+    @include('layouts.footer')
 </body>
 </html>
