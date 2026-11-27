@@ -12,8 +12,8 @@
         <nav class="link">
             <a href="{{ route('about') }}">О нас</a>
             <a href="{{ route('mech') }}">Механика</a>
-            <a href="{{ route('building') }}">Строительство</a>          
+            <a href="{{ route('building') }}">Строительство</a>
             <a href="{{ route('news') }}">Обновления</a>
-        </nav>
+    </nav>
     </header>
 </body>
